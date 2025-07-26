@@ -141,19 +141,22 @@ If you use or adapt any part of this work, please cite the repository or credit 
 ## Citation
 If you use this code in academic work, please cite:
 
+```bibtex
 @misc{kanu2025hio,
-title = {Iterative Phase Retrieval Using the Hybrid Input-Output Algorithm},
-author = {Ansal Kanu},
-year = {2025},
-howpublished = {\url{https://github.com/<Ansal06>/phase-retrieval}}
+  title  = {Iterative Phase Retrieval Using the Hybrid Input-Output Algorithm},
+  author = {Ansal Kanu},
+  year   = {2025},
+  howpublished = {\url{https://github.com/Ansal06/Iterative-Phase-Retrieval}}
 }
-
+```
 ---
 
 ## Acknowledgements
 Based on foundational work by **Gerchberg & Saxton (1972)**, **Fienup (1978, 1982)**, and recent advances in vortex-beam phase retrieval (**Kularia et al., JOSA A 2024**).
+```
 -Gerchberg & Saxton (1972) – A practical algorithm for the determination of phase from image and diffraction plane pictures, Optik 35(2), 237–246.
 -Fienup (1978, 1982) – Reconstruction of an object from the modulus of its Fourier transform, Opt. Lett. 3, 27–29 (1978); Phase retrieval algorithms: a comparison, Appl. Opt. 21(15), 2758–2769 (1982).
 -Kularia et al. (2024) – Twin-stagnation-free phase retrieval with vortex phase illumination, JOSA A 41, 1166–1174 (2024).
-  
+```
+
 Happy reconstructing!
