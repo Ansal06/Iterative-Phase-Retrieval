@@ -1,4 +1,6 @@
 # 🌀 Iterative Phase Retrieval Using the HIO Algorithm
+[![DOI](https://zenodo.org/badge/1026643697.svg)](https://doi.org/10.5281/zenodo.16447566)
+
 
 This repository contains my implementation of the **Hybrid Input-Output (HIO)** algorithm for **phase retrieval** — recovering phase information from Fourier magnitude data, a key problem in computational imaging and coherent diffractive imaging (CDI).
 
@@ -133,7 +135,7 @@ This project code is solely developed by:
 **Ansal Kanu**  
 B.Sc. (Hons.) Physics, Ramjas College, University of Delhi  
 Email: kanuansal06@gmail.com  
-GitHub: [github.com/<your-username>](https://github.com/<your-username>)
+GitHub: [github.com/Ansal06](https://github.com/Ansal06)
 
 If you use or adapt any part of this work, please cite the repository or credit the author.
 
@@ -143,10 +145,12 @@ If you use this code in academic work, please cite:
 
 ```bibtex
 @misc{kanu2025hio,
-  title  = {Iterative Phase Retrieval Using the Hybrid Input-Output Algorithm},
-  author = {Ansal Kanu},
-  year   = {2025},
-  howpublished = {\url{https://github.com/Ansal06/Iterative-Phase-Retrieval}}
+  author       = {Ansal Kanu},
+  title        = {Iterative Phase Retrieval Using the HIO Algorithm},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.16447566},
+  url          = {https://doi.org/10.5281/zenodo.16447566}
 }
 ```
 ---
