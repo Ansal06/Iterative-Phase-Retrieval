@@ -10,17 +10,26 @@ Developed as a project following a 3-month course in **Fourier optics and comput
 
 In CDI, only the intensity (magnitude squared) of the Fourier transform is measured, and the phase is lost. Iterative algorithms like HIO are used to recover this lost phase.
 
-The HIO update rule is: 
+The HIO update rule used is:
 
-`O^(k+1)(x,y) = {
-    O'(k)(x,y)                                    if (x,y) ∈ Support
-    O(k)(x,y) - β(O(k)(x,y) - O'(k)(x,y))       otherwise
-}`
+$$O^{(k+1)}(x,y) = \begin{cases} 
+O'^{(k)}(x,y) & \text{if } (x,y) \in \text{Support} \\
+O^{(k)}(x,y) - \beta\left(O^{(k)}(x,y) - O'^{(k)}(x,y)\right) & \text{otherwise}
+\end{cases}$$
 
-where:
-- `O′_k(x, y)` is the object after applying the Fourier constraint
-- `β` is the relaxation parameter (typically between 0.5 and 1)
+**where:**
+- $O^{(k+1)}(x,y)$ is the updated object estimate at iteration $k+1$
+- $O'^{(k)}(x,y)$ is the result after applying Fourier constraints at iteration $k$
+- $O^{(k)}(x,y)$ is the object estimate from the previous iteration
+- $\beta$ is the relaxation parameter (typically 0.8)
+- **Support** refers to the known region where the object exists (non-zero values expected)
 
+**Physical Interpretation:**
+- **Inside support region**: Accept the Fourier-constrained solution directly
+- **Outside support region**: Apply feedback with relaxation to gradually suppress artifacts
+- The $\beta$ parameter controls the strength of the correction, preventing oscillations while ensuring convergence
+
+  
 ## Project Overview
 Phase retrieval seeks to recover the lost **Fourier phase** of an object given only its intensity (magnitude) measurements.  
 We implement:
